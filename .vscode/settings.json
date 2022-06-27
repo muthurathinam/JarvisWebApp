@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/3d97164d-47e9-4a49-8556-ab91250727b3/microsoft.web/sites/subscriptions/3d97164d-47e9-4a49-8556-ab91250727b3/resourceGroups/mumuthus/providers/Microsoft.Web/sites/JarvisBotACLoopsbot",
+    "appService.deploySubpath": "."
+}
