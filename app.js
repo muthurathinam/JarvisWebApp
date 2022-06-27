@@ -17,9 +17,10 @@ app.use(cookieParser());
 app.use(express.static(
     path.join(__dirname, './jarvis-app/build')));
 
-app.use('/', indexRouter);
-app.use('/baseCard', indexRouter);
-app.use('/refreshCard', indexRouter);
+app.get(['/', '/baseCard', '/refreshCard'], (req, res) => {
+    res.sendFile(path.join(__dirname, '/jarvis-app/build/index.html'));
+});
+
 app.use('/getCard', getCard);
 
 
